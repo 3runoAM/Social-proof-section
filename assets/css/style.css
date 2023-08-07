@@ -1,0 +1,267 @@
+:root {
+    --very-dark-agenta: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%);
+
+    --dark-grayish-magenta: hsl(303, 10%, 53%);
+    --light-grayish-magenta: hsl(300, 24%, 96%);
+}
+
+body, * {
+    margin: 0;
+    font-family: "League Spartan", serif;
+}
+
+.page-container {
+    position: relative;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/**/
+
+.bg-top {
+    width: 23.375rem;
+    height: 14.5rem;
+    position: absolute;
+    top: -2rem;
+    left: 0;
+    background: url("/assets/images/bg-pattern-top-mobile.svg") no-repeat;
+}
+
+.bg-bottom {
+    width: 23.375rem;
+    height: 14.5rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: url("/assets/images/bg-pattern-bottom-mobile.svg") no-repeat;
+}
+
+/**/
+
+.top-content-container {
+    height: 37.125rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    align-self: center;
+}
+
+
+.title-description-container {
+    height: 12.875rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title {
+    width: 18.125rem;
+    color: var(--very-dark-agenta);
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.description {
+    width: 20.8rem;
+    color: var(--dark-grayish-magenta);
+    font-size: 1.125rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+/***/
+
+.rated-container {
+    width: 20.5rem;
+    height: 16.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.reviews, .report, .best {
+    width: 20.3125rem;
+    height: 4.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.625rem;
+    background: var(--light-grayish-magenta);
+    color: var(--very-dark-agenta);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.stars {
+    width: 5.3rem;
+    height: 2rem;
+    background: url("/assets/images/icon-star.svg") repeat-x;
+}
+
+/**/
+
+.bottom-content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 48.875rem;
+}
+
+
+.buyer-container {
+    width: 21.875rem;
+    height: 14.625rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 0.625rem;
+    background: var(--very-dark-agenta);
+}
+
+.buyer-info {
+    width: 16.875rem;;
+    height: 2.5625rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+img {
+    width: 2.5625rem;
+    height: 2.5625rem;
+    margin-right: 1rem;
+    border-radius: 2.5625rem;
+}
+
+.name-verified-container {
+    height: 2.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.buyer-name {
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.buyer-verified {
+    color: var(--soft-pink);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.buyer-comment {
+    width: 16.4375rem;;
+    text-align: left;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 130%;
+    font-style: normal;
+}
+
+@media (max-width: 1441px) {
+    .content-container {
+        height: 41rem;
+        justify-content: space-between;
+    }
+
+    .bg-top {
+        width: 36.5rem;
+        height: 22.625rem;
+        background: url("/assets/images/bg-pattern-top-desktop.svg") no-repeat;
+    }
+
+    .bg-bottom {
+        width: 67.8125rem;
+        height: 42.0625rem;
+        position: absolute;
+        bottom: -9rem;
+        background: url("/assets/images/bg-pattern-bottom-desktop.svg") no-repeat;
+    }
+
+    /**/
+
+    .top-content-container {
+        height: 23rem;
+        width: 92rem;
+        flex-direction: row;
+    }
+
+
+    .title {
+        width: 19.9375rem;
+        font-size: 3.125rem;
+        font-weight: 700;
+        text-align: left;
+    }
+
+    .description {
+        width: 21.4375rem;
+        font-size: 0.9375rem;
+        font-weight: 400;
+        text-align: left;
+    }
+
+    /**/
+
+    .rated-container {
+        width: 33.1875rem;
+        height: 11.9375rem;
+    }
+
+    .reviews, .report, .best {
+        width: 27.4375rem;
+        height: 3.3125rem;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .reviews {
+        align-self: flex-start;
+    }
+
+    .best {
+        align-self: flex-end;
+    }
+
+    .stars {
+        height: 1rem;
+    }
+
+    /**/
+
+    .bottom-content-container {
+        width: 69.3125rem;
+        height: 16.625rem;
+        align-self: center;
+        flex-direction: row;
+    }
+
+    .buyer-container {
+        width: 21.875rem;
+        height: 14.625rem;
+    }
+
+    .buyer-container.colton {
+        align-self: flex-start;
+    }
+
+    .buyer-container.anne {
+        align-self: flex-end;
+    }
+
+}
